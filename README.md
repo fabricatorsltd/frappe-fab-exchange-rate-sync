@@ -1,33 +1,55 @@
-### Fab Exchange Rate Sync
+# FAB Exchange Rate Sync
 
-Automatic exchange rate sync via multiple providers
+Automatic exchange-rate synchronization for ERPNext.
 
-### Installation
+## Scope
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+`fab_exchange_rate_sync` manages provider-driven updates for native ERPNext
+`Currency Exchange` records while keeping operator control over cadence,
+fallbacks, and manual overrides.
+
+Current responsibilities include:
+
+- syncing native `Currency Exchange` records
+- supporting primary and fallback providers
+- enforcing minimum refresh intervals per provider plan
+- protecting manually maintained rates unless explicitly allowed
+- storing sync provenance on the generated exchange-rate records
+
+Included providers currently include:
+
+- Open Exchange Rates
+- ExchangeRate.host
+
+## Branches
+
+- `develop`: integration branch for testing against Frappe/ERPNext `develop`
+- `version-16`: stable branch for Frappe/ERPNext 16
+
+## Installation
 
 ```bash
 cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch version-16
-bench install-app fab_exchange_rate_sync
+bench get-app https://github.com/fabricatorsltd/frappe-fab-exchange-rate-sync.git --branch version-16
+bench --site [site] install-app fab_exchange_rate_sync
 ```
 
-### Contributing
+## Setup
 
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
+1. Open **Exchange Rate Provider** and configure the seeded provider records.
+2. Open **Exchange Rate Sync Settings**.
+3. Choose the primary provider, optional fallback, and the currency pairs to sync.
+4. Enable scheduled sync or run **Sync Now** manually.
+
+## Development
 
 ```bash
 cd apps/fab_exchange_rate_sync
 pre-commit install
 ```
 
-Pre-commit is configured to use the following tools for checking and formatting your code:
+Pre-commit is configured for Ruff, ESLint, Prettier, and PyUpgrade.
 
-- ruff
-- eslint
-- prettier
-- pyupgrade
+## License
 
-### License
-
-agpl-3.0
+GNU Affero General Public License v3.0

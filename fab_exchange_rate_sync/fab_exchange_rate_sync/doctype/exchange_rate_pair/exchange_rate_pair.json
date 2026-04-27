@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "creation": "2026-04-25 22:40:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "from_currency",
+  "to_currency",
+  "enabled",
+  "column_break_flags",
+  "for_buying",
+  "for_selling"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_currency",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "From Currency",
+   "options": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_currency",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "To Currency",
+   "options": "Currency",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "column_break_flags",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "for_buying",
+   "fieldtype": "Check",
+   "label": "For Buying"
+  },
+  {
+   "default": "1",
+   "fieldname": "for_selling",
+   "fieldtype": "Check",
+   "label": "For Selling"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-25 22:40:00.000000",
+ "modified_by": "Administrator",
+ "module": "Fab Exchange Rate Sync",
+ "name": "Exchange Rate Pair",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

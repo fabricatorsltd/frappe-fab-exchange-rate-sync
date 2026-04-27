@@ -1,0 +1,179 @@
+{
+ "actions": [],
+ "allow_import": 0,
+ "autoname": "field:provider_name",
+ "creation": "2026-04-25 22:40:00.000000",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "provider_name",
+  "adapter_key",
+  "column_break_identity",
+  "enabled",
+  "plan_name",
+  "connection_section",
+  "endpoint_url",
+  "api_key",
+  "column_break_connection",
+  "default_source_currency",
+  "timeout_seconds",
+  "capabilities_section",
+  "minimum_refresh_interval_minutes",
+  "supports_historical",
+  "column_break_capabilities",
+  "use_source_currency_param",
+  "use_currencies_param"
+ ],
+ "fields": [
+  {
+   "fieldname": "provider_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Provider Name",
+   "read_only": 1,
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "adapter_key",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Adapter",
+   "options": "\nopen_exchange_rates\nexchangerate_host",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_identity",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "plan_name",
+   "fieldtype": "Data",
+   "label": "Plan Name"
+  },
+  {
+   "fieldname": "connection_section",
+   "fieldtype": "Section Break",
+   "label": "Connection"
+  },
+  {
+   "fieldname": "endpoint_url",
+   "fieldtype": "Data",
+   "label": "Endpoint URL",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "api_key",
+   "fieldtype": "Password",
+   "label": "API Key"
+  },
+  {
+   "fieldname": "column_break_connection",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "USD",
+   "fieldname": "default_source_currency",
+   "fieldtype": "Link",
+   "label": "Default Source Currency",
+   "options": "Currency",
+   "reqd": 1
+  },
+  {
+   "default": "15",
+   "fieldname": "timeout_seconds",
+   "fieldtype": "Int",
+   "label": "Timeout Seconds",
+   "reqd": 1
+  },
+  {
+   "fieldname": "capabilities_section",
+   "fieldtype": "Section Break",
+   "label": "Plan & Capabilities"
+  },
+  {
+   "default": "60",
+   "description": "The shortest safe polling interval allowed by the provider plan on this account.",
+   "fieldname": "minimum_refresh_interval_minutes",
+   "fieldtype": "Int",
+   "label": "Minimum Refresh Interval Minutes",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "supports_historical",
+   "fieldtype": "Check",
+   "label": "Supports Historical Rates"
+  },
+  {
+   "fieldname": "column_break_capabilities",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "Enable only if the current plan supports non-USD source currency requests.",
+   "fieldname": "use_source_currency_param",
+   "fieldtype": "Check",
+   "label": "Use Source Currency Parameter"
+  },
+  {
+   "default": "1",
+   "fieldname": "use_currencies_param",
+   "fieldtype": "Check",
+   "label": "Use Currencies Filter Parameter"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-25 22:40:00.000000",
+ "modified_by": "Administrator",
+ "module": "Fab Exchange Rate Sync",
+ "name": "Exchange Rate Provider",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1
+  }
+ ],
+ "search_fields": "provider_name,adapter_key,plan_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "provider_name",
+ "track_changes": 1
+}

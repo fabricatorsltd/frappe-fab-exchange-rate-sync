@@ -1,0 +1,494 @@
+# Translations template for Fab Exchange Rate Sync.
+# Copyright (C) 2026 fabricators
+# This file is distributed under the same license as the Fab Exchange Rate Sync project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Fab Exchange Rate Sync VERSION\n"
+"Report-Msgid-Bugs-To: support@fabricators.ltd\n"
+"POT-Creation-Date: 2026-04-26 10:37+0000\n"
+"PO-Revision-Date: 2026-04-26 10:37+0000\n"
+"Last-Translator: support@fabricators.ltd\n"
+"Language-Team: support@fabricators.ltd\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.js:4
+msgid "1. Open the seeded provider records and set API keys. 2. Add the currency pairs you want. 3. Click Sync Now for a manual fetch. Enable Automatic Sync only controls scheduled runs."
+msgstr ""
+
+#. Label of the api_key (Password) field in DocType 'Exchange Rate Provider'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.json
+msgid "API Key"
+msgstr ""
+
+#. Name of a role
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.json
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "Accounts Manager"
+msgstr ""
+
+#. Name of a role
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.json
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "Accounts User"
+msgstr ""
+
+#. Label of the adapter_key (Select) field in DocType 'Exchange Rate Provider'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.json
+msgid "Adapter"
+msgstr ""
+
+#. Label of the connection_section (Section Break) field in DocType 'Exchange
+#. Rate Provider'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.json
+msgid "Connection"
+msgstr ""
+
+#. Label of the pairs_section (Section Break) field in DocType 'Exchange Rate
+#. Sync Settings'
+#. Label of the currency_pairs (Table) field in DocType 'Exchange Rate Sync
+#. Settings'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "Currency Pairs"
+msgstr ""
+
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.py:41
+msgid "Currency pair {0} -> {1} must apply to buying or selling."
+msgstr ""
+
+#. Option for the 'Sync Frequency' (Select) field in DocType 'Exchange Rate
+#. Sync Settings'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "Custom"
+msgstr ""
+
+#. Label of the custom_interval_minutes (Int) field in DocType 'Exchange Rate
+#. Sync Settings'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "Custom Interval Minutes"
+msgstr ""
+
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.py:14
+msgid "Custom Interval Minutes must be greater than 0."
+msgstr ""
+
+#. Option for the 'Sync Frequency' (Select) field in DocType 'Exchange Rate
+#. Sync Settings'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "Daily"
+msgstr ""
+
+#. Label of the default_source_currency (Link) field in DocType 'Exchange Rate
+#. Provider'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.json
+msgid "Default Source Currency"
+msgstr ""
+
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.py:33
+msgid "Duplicate currency pair {0} -> {1} detected."
+msgstr ""
+
+#. Label of the enabled (Check) field in DocType 'Exchange Rate Sync Settings'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "Enable Automatic Sync"
+msgstr ""
+
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.py:48
+msgid "Enable at least one currency pair before enabling exchange rate sync."
+msgstr ""
+
+#. Description of the 'Use Source Currency Parameter' (Check) field in DocType
+#. 'Exchange Rate Provider'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.json
+msgid "Enable only if the current plan supports non-USD source currency requests."
+msgstr ""
+
+#. Label of the enabled (Check) field in DocType 'Exchange Rate Pair'
+#. Label of the enabled (Check) field in DocType 'Exchange Rate Provider'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_pair/exchange_rate_pair.json
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.json
+msgid "Enabled"
+msgstr ""
+
+#. Label of the endpoint_url (Data) field in DocType 'Exchange Rate Provider'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.json
+msgid "Endpoint URL"
+msgstr ""
+
+#. Name of a DocType
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_pair/exchange_rate_pair.json
+msgid "Exchange Rate Pair"
+msgstr ""
+
+#. Name of a DocType
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.json
+msgid "Exchange Rate Provider"
+msgstr ""
+
+#: fab_exchange_rate_sync/sync.py:149
+msgid "Exchange Rate Provider {0} does not exist."
+msgstr ""
+
+#: fab_exchange_rate_sync/sync.py:153
+msgid "Exchange Rate Provider {0} is disabled."
+msgstr ""
+
+#: fab_exchange_rate_sync/install.py:58
+msgid "Exchange Rate Sync"
+msgstr ""
+
+#. Name of a DocType
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "Exchange Rate Sync Settings"
+msgstr ""
+
+#: fab_exchange_rate_sync/providers.py:37
+msgid "Exchange rate provider {0} uses unsupported adapter {1}."
+msgstr ""
+
+#: fab_exchange_rate_sync/providers.py:175
+msgid "Exchange rate request to {0} failed with status {1}: {2}"
+msgstr ""
+
+#: fab_exchange_rate_sync/providers.py:169
+msgid "Exchange rate request to {0} failed: {1}"
+msgstr ""
+
+#: fab_exchange_rate_sync/providers.py:188
+msgid "Exchange rate request to {0} returned an unexpected payload."
+msgstr ""
+
+#: fab_exchange_rate_sync/providers.py:185
+msgid "Exchange rate request to {0} returned invalid JSON."
+msgstr ""
+
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.js:49
+msgid "Exchange rate sync complete: {0} inserted, {1} updated."
+msgstr ""
+
+#: fab_exchange_rate_sync/sync.py:91
+msgid "Exchange rate sync failed"
+msgstr ""
+
+#: fab_exchange_rate_sync/sync.py:88
+msgid "Exchange rate sync failed without a provider error message."
+msgstr ""
+
+#: fab_exchange_rate_sync/sync.py:40
+msgid "Exchange rate sync is disabled."
+msgstr ""
+
+#: fab_exchange_rate_sync/providers.py:134
+msgid "ExchangeRate.host returned an error: {0}"
+msgstr ""
+
+#: fab_exchange_rate_sync/providers.py:142
+msgid "ExchangeRate.host returned no quotes."
+msgstr ""
+
+#. Label of the fallback_provider (Link) field in DocType 'Exchange Rate Sync
+#. Settings'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "Fallback Provider"
+msgstr ""
+
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.py:17
+msgid "Fallback Provider must be different from Primary Provider."
+msgstr ""
+
+#. Description of the 'Historical Days' (Int) field in DocType 'Exchange Rate
+#. Sync Settings'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "Fetch additional historical days on each run. 0 means latest day only."
+msgstr ""
+
+#: fab_exchange_rate_sync/install.py:92
+msgid "Fetched At"
+msgstr ""
+
+#. Label of the for_buying (Check) field in DocType 'Exchange Rate Pair'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_pair/exchange_rate_pair.json
+msgid "For Buying"
+msgstr ""
+
+#. Label of the for_selling (Check) field in DocType 'Exchange Rate Pair'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_pair/exchange_rate_pair.json
+msgid "For Selling"
+msgstr ""
+
+#. Label of the from_currency (Link) field in DocType 'Exchange Rate Pair'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_pair/exchange_rate_pair.json
+msgid "From Currency"
+msgstr ""
+
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.py:23
+msgid "From Currency and To Currency cannot be the same on row {0}."
+msgstr ""
+
+#. Label of the historical_days (Int) field in DocType 'Exchange Rate Sync
+#. Settings'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "Historical Days"
+msgstr ""
+
+#. Option for the 'Sync Frequency' (Select) field in DocType 'Exchange Rate
+#. Sync Settings'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "Hourly"
+msgstr ""
+
+#. Description of the 'Overwrite Manual Rates' (Check) field in DocType
+#. 'Exchange Rate Sync Settings'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "If disabled, any Currency Exchange record without a synced provider is treated as manual and left untouched."
+msgstr ""
+
+#. Label of the last_attempted_sync_at (Datetime) field in DocType 'Exchange
+#. Rate Sync Settings'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "Last Attempted Sync At"
+msgstr ""
+
+#. Label of the last_error (Small Text) field in DocType 'Exchange Rate Sync
+#. Settings'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "Last Error"
+msgstr ""
+
+#. Label of the status_section (Section Break) field in DocType 'Exchange Rate
+#. Sync Settings'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "Last Run Status"
+msgstr ""
+
+#. Label of the last_successful_sync_at (Datetime) field in DocType 'Exchange
+#. Rate Sync Settings'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "Last Successful Sync At"
+msgstr ""
+
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.js:22
+msgid "Last attempt: {0}"
+msgstr ""
+
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.js:27
+msgid "Last run failed"
+msgstr ""
+
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.js:16
+msgid "Last success: {0}"
+msgstr ""
+
+#: fab_exchange_rate_sync/install.py:99
+msgid "Lock From Sync"
+msgstr ""
+
+#. Label of the minimum_refresh_interval_minutes (Int) field in DocType
+#. 'Exchange Rate Provider'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.json
+msgid "Minimum Refresh Interval Minutes"
+msgstr ""
+
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.py:11
+msgid "Minimum Refresh Interval Minutes must be greater than 0."
+msgstr ""
+
+#: fab_exchange_rate_sync/sync.py:44
+msgid "No currency pairs are enabled."
+msgstr ""
+
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.js:12
+msgid "No currency pairs configured"
+msgstr ""
+
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.js:59
+msgid "No exchange rates were updated."
+msgstr ""
+
+#: fab_exchange_rate_sync/providers.py:104
+msgid "Open Exchange Rates returned an error: {0}"
+msgstr ""
+
+#: fab_exchange_rate_sync/providers.py:111
+msgid "Open Exchange Rates returned no rates."
+msgstr ""
+
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.js:35
+msgid "Open Primary Provider"
+msgstr ""
+
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.js:30
+msgid "Open Providers"
+msgstr ""
+
+#. Label of the overwrite_manual_rates (Check) field in DocType 'Exchange Rate
+#. Sync Settings'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "Overwrite Manual Rates"
+msgstr ""
+
+#. Label of the capabilities_section (Section Break) field in DocType 'Exchange
+#. Rate Provider'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.json
+msgid "Plan & Capabilities"
+msgstr ""
+
+#. Label of the plan_name (Data) field in DocType 'Exchange Rate Provider'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.json
+msgid "Plan Name"
+msgstr ""
+
+#: fab_exchange_rate_sync/install.py:100
+msgid "Prevent automated sync runs from updating this exchange rate."
+msgstr ""
+
+#. Label of the primary_provider (Link) field in DocType 'Exchange Rate Sync
+#. Settings'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "Primary Provider"
+msgstr ""
+
+#. Label of the provider_name (Data) field in DocType 'Exchange Rate Provider'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.json
+msgid "Provider Name"
+msgstr ""
+
+#: fab_exchange_rate_sync/sync.py:209
+msgid "Provider data does not include source currency {0}."
+msgstr ""
+
+#: fab_exchange_rate_sync/sync.py:211
+msgid "Provider data does not include target currency {0}."
+msgstr ""
+
+#. Label of the schedule_section (Section Break) field in DocType 'Exchange
+#. Rate Sync Settings'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "Schedule"
+msgstr ""
+
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.py:11
+#: fab_exchange_rate_sync/sync.py:135
+msgid "Set a Primary Provider before enabling exchange rate sync."
+msgstr ""
+
+#: fab_exchange_rate_sync/providers.py:48
+#: fab_exchange_rate_sync/providers.py:73
+msgid "Set an API key on Exchange Rate Provider {0}."
+msgstr ""
+
+#: fab_exchange_rate_sync/install.py:72
+msgid "Source Currency"
+msgstr ""
+
+#: fab_exchange_rate_sync/install.py:80
+msgid "Source Timestamp"
+msgstr ""
+
+#. Label of the supports_historical (Check) field in DocType 'Exchange Rate
+#. Provider'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.json
+msgid "Supports Historical Rates"
+msgstr ""
+
+#. Label of the sync_frequency (Select) field in DocType 'Exchange Rate Sync
+#. Settings'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "Sync Frequency"
+msgstr ""
+
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.js:40
+msgid "Sync Now"
+msgstr ""
+
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.js:57
+msgid "Sync not run"
+msgstr ""
+
+#: fab_exchange_rate_sync/install.py:64
+msgid "Synced Provider"
+msgstr ""
+
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.js:44
+msgid "Syncing exchange rates..."
+msgstr ""
+
+#. Name of a role
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.json
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "System Manager"
+msgstr ""
+
+#. Description of the 'Minimum Refresh Interval Minutes' (Int) field in DocType
+#. 'Exchange Rate Provider'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.json
+msgid "The shortest safe polling interval allowed by the provider plan on this account."
+msgstr ""
+
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.js:4
+msgid "These provider records are shipped by the app. Edit credentials and plan limits here, but new provider integrations must be added in code."
+msgstr ""
+
+#. Label of the timeout_seconds (Int) field in DocType 'Exchange Rate Provider'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.json
+msgid "Timeout Seconds"
+msgstr ""
+
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.py:13
+msgid "Timeout Seconds must be greater than 0."
+msgstr ""
+
+#. Label of the to_currency (Link) field in DocType 'Exchange Rate Pair'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_pair/exchange_rate_pair.json
+msgid "To Currency"
+msgstr ""
+
+#: fab_exchange_rate_sync/providers.py:38
+msgid "Unknown provider"
+msgstr ""
+
+#: fab_exchange_rate_sync/providers.py:105
+#: fab_exchange_rate_sync/providers.py:135
+msgid "Unknown provider error"
+msgstr ""
+
+#: fab_exchange_rate_sync/providers.py:178
+msgid "Unknown provider response"
+msgstr ""
+
+#. Label of the update_existing_synced_rates (Check) field in DocType 'Exchange
+#. Rate Sync Settings'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_sync_settings/exchange_rate_sync_settings.json
+msgid "Update Existing Synced Rates"
+msgstr ""
+
+#. Label of the use_currencies_param (Check) field in DocType 'Exchange Rate
+#. Provider'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.json
+msgid "Use Currencies Filter Parameter"
+msgstr ""
+
+#. Label of the use_source_currency_param (Check) field in DocType 'Exchange
+#. Rate Provider'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.json
+msgid "Use Source Currency Parameter"
+msgstr ""
+
+#. Option for the 'Adapter' (Select) field in DocType 'Exchange Rate Provider'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.json
+msgid "exchangerate_host"
+msgstr ""
+
+#. Option for the 'Adapter' (Select) field in DocType 'Exchange Rate Provider'
+#: fab_exchange_rate_sync/fab_exchange_rate_sync/doctype/exchange_rate_provider/exchange_rate_provider.json
+msgid "open_exchange_rates"
+msgstr ""
+
+#: fab_exchange_rate_sync/providers.py:39
+msgid "unknown"
+msgstr ""
+

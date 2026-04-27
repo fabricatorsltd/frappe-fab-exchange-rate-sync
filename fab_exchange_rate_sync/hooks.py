@@ -4,22 +4,21 @@ app_publisher = "fabricators"
 app_description = "Automatic exchange rate sync via multiple providers"
 app_email = "support@fabricators.ltd"
 app_license = "agpl-3.0"
+app_home = "/app/fab-exchange-rate-sync"
 
 # Apps
 # ------------------
 
-# required_apps = []
+required_apps = ["erpnext", "fab"]
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "fab_exchange_rate_sync",
-# 		"logo": "/assets/fab_exchange_rate_sync/logo.png",
-# 		"title": "Fab Exchange Rate Sync",
-# 		"route": "/fab_exchange_rate_sync",
-# 		"has_permission": "fab_exchange_rate_sync.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "fab_exchange_rate_sync",
+		"title": app_title,
+		"route": app_home,
+	}
+]
 
 # Includes in <head>
 # ------------------
@@ -85,8 +84,7 @@ app_license = "agpl-3.0"
 # Installation
 # ------------
 
-# before_install = "fab_exchange_rate_sync.install.before_install"
-# after_install = "fab_exchange_rate_sync.install.after_install"
+after_install = "fab_exchange_rate_sync.install.after_install"
 
 # Uninstallation
 # ------------
@@ -149,23 +147,13 @@ app_license = "agpl-3.0"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"fab_exchange_rate_sync.tasks.all"
-# 	],
-# 	"daily": [
-# 		"fab_exchange_rate_sync.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"fab_exchange_rate_sync.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"fab_exchange_rate_sync.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"fab_exchange_rate_sync.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	"cron": {
+		"*/5 * * * *": [
+			"fab_exchange_rate_sync.sync.run_scheduled_sync",
+		]
+	}
+}
 
 # Testing
 # -------
@@ -256,3 +244,4 @@ app_license = "agpl-3.0"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+after_migrate = ["fab_exchange_rate_sync.install.after_migrate"]
