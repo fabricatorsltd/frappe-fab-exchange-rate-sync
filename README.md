@@ -1,4 +1,4 @@
-# FAB Exchange Rate Sync
+# fab Exchange Rate Sync
 
 Automatic exchange-rate synchronization for ERPNext.
 
@@ -40,6 +40,15 @@ bench --site [site] install-app fab_exchange_rate_sync
 2. Open **Exchange Rate Sync Settings**.
 3. Choose the primary provider, optional fallback, and the currency pairs to sync.
 4. Enable scheduled sync or run **Sync Now** manually.
+
+## Contributing
+
+Follow the official Frappe contribution guidelines:
+
+- <https://github.com/frappe/erpnext/wiki/Contribution-Guidelines>
+
+Contributions here should follow the same proposal, coding, review, and
+documentation expectations as upstream Frappe apps.
 
 ## Development
 
