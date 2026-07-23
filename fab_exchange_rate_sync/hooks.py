@@ -12,13 +12,17 @@ app_home = "/app/fab-exchange-rate-sync"
 required_apps = ["erpnext", "fab"]
 
 # Each item in the list will be shown as an app in the apps page
-add_to_apps_screen = [
-	{
-		"name": "fab_exchange_rate_sync",
-		"title": app_title,
-		"route": app_home,
-	}
-]
+# Deliberately not declared: this app is reached through the "fab" container on the
+# desk, so it must not claim a top level tile of its own. Declaring it also made
+# create_desktop_icons_from_installed_apps() read app_details["logo"] without a
+# default, which raised KeyError and aborted desktop icon creation for the site.
+# add_to_apps_screen = [
+# 	{
+# 		"name": "fab_exchange_rate_sync",
+# 		"title": app_title,
+# 		"route": app_home,
+# 	}
+# ]
 
 # Includes in <head>
 # ------------------
